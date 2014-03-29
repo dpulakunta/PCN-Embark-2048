@@ -38,6 +38,9 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
 // Continues the game (both restart and keep playing)
 HTMLActuator.prototype.continueGame = function () {
   this.clearMessage();
+  document.getElementById("audiotagTEAM").pause();
+  document.getElementById("audiotagMIA").pause();
+  document.getElementById("audiotagOLD").pause();
 };
 
 HTMLActuator.prototype.clearContainer = function (container) {
@@ -125,11 +128,23 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 };
 
 HTMLActuator.prototype.message = function (won) {
+  var seed = Math.floor(Date.now()); // Math.floor(Date.now()/(1000*3600*24))
+  var audio_tags = [
+    "audiotagTEAM",
+    "audiotagMIA",
+    "audiotagOLD",
+  ];
+
+
   var type    = won ? "game-won" : "game-over";
+  var audio_tag = won ? audio_tags[seed % audio_tags.length] : audio_tags[seed % audio_tags.length];
+
   var message = won ? "You win!" : "Game over!";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
+  document.getElementById(audio_tag).currentTime=41;
+  document.getElementById(audio_tag).play();
 };
 
 HTMLActuator.prototype.clearMessage = function () {
