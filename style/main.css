@@ -19,6 +19,10 @@ body {
   margin-top: 10px;
 }
 
+.key td {
+  font-size: 36px;
+}
+
 .heading:after {
   content: "";
   display: block;
