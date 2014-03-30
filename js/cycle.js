@@ -57,6 +57,7 @@ function getRandomImages() {
 */
 
 function startCycleOne() {
+	window.scrollTo(50,60);
 	setInterval(function() {
 		getRandomImagesOne()
 	}, 5000);
