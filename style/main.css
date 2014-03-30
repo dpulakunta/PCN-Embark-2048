@@ -11,6 +11,10 @@ html, body {
 body {
   margin: 80px 0; }
 
+#tile-explanations {
+  margin: 0px 100px 0px 0px
+}
+
 .table {
   border-radius: 15px;
   box-shadow: 10px 10px 5px #888888;
@@ -52,20 +56,20 @@ body {
 
 .slideshow_top {
   position: absolute;
-  left: 1000px;
-  top: 265px;
+  left: 542px;
+  top: 185px;
 }
 
 .slideshow_mid {
   position: absolute;
-  left: 1000px;
-  top: 465px;
+  left: 542px;
+  top: 385px;
 }
 
 .slideshow_bot {
   position: absolute;
-  left: 1000px;
-  top: 665px;
+  left: 542px;
+  top: 585px;
 }
 
 .slideshow_image {
@@ -103,15 +107,15 @@ body {
   width: 330px;
   display: none;
   position: absolute;
-  left: 50px;
-  top: 410px;
+  left: -400px;
+  top: 332px;
 }
 
 #tile-explanation-cast {
   display: none;
   position: absolute;
-  left: 20px;
-  top: 405px;
+  left: -448px;
+  top: 332px;
 }
 
 .key td {
@@ -224,6 +228,7 @@ hr {
   margin-bottom: 30px; }
 
 .container {
+  position: relative;
   width: 500px;
   margin: 0 auto; }
 
