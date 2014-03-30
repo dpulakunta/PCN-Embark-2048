@@ -59,19 +59,19 @@ function getRandomImages() {
 function startCycleOne() {
 	setInterval(function() {
 		getRandomImagesOne()
-	}, 4000);
+	}, 5000);
 }
 
 function startCycleTwo() {
 	setInterval(function() {
 		getRandomImagesTwo()
-	}, 7000);
+	}, 8000);
 }
 
 function startCycleThree() {
 	setInterval(function() {
 		getRandomImagesThree()
-	}, 5500);
+	}, 6500);
 }
 
 function startCycles() {
