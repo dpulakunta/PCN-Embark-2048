@@ -20,9 +20,95 @@
   <audio id="audiotagMIA" src="audio/mia.mp3" preload="auto"></audio>
   <audio id="audiotagOLD" src="audio/old.mp3" preload="auto"></audio>
 
-  <div id="" class="tile-explanation">
-    <img src="img/matiyagas.jpg" height="300">
+  <div class="tile-explanation-embarklogo">
+    <img class="pcn_image" src="img/embarklogo.png" height="315" style="border:5px solid black border-radius:25px">
+    <center>
+    <p class="embarkinfo"><strong>UC Berkeley's Pilipino American Alliance presents the 38th Annual Pilipino Cultural Night, PCN 2014: Embark.</strong></p>
+    </center>
   </div>
+
+  <div id="tile-explanation-cast" class="tile-explanation-directors">
+    <img class="pcn_image" src="img/directors.jpg">
+    <center>
+    <p class="castinfo"><strong>Acting Directresses: Nicole Arca and Jasmine Hipolito</strong>
+    </p>
+    </center>
+  </div>
+
+  <div id="tile-explanation-cast" class="tile-explanation-rafael_juanita">
+    <img class="pcn_image" src="img/rafael_juanita.jpg">
+    <center>
+    <p class="castinfo"><strong>Grandparents Raphael and Juanita: <br> Kevin Pamplona and Ranna Iglesias</strong>
+    </p>
+    </center>
+  </div>
+
+  <div id="tile-explanation-cast" class="tile-explanation-rivera_joe">
+    <img class="pcn_image" src="img/rivera_joe.jpg">
+    <center>
+    <p class="castinfo"><strong>Joe Rivera and his two children, Jennifer and Joe Jr.: <br> Nicholas Pitt, Sarah Macaraeg, JR Rempola</strong>
+    </p>
+    </center>
+  </div>
+
+  <div id="tile-explanation-cast" class="tile-explanation-parkers">
+    <img class="pcn_image" src="img/parkers.jpg">
+    <center>
+    <p class="castinfo"><strong>Esperanza Parker and her child Matilda: <br> Pamela Lagera and Molly Krost</strong>
+    </p>
+    </center>
+  </div>
+
+  <div id="tile-explanation-cast" class="tile-explanation-evangeline_boy">
+    <img class="pcn_image" src="img/evangeline_boy.jpg">
+    <center>
+    <p class="castinfo"><strong>Siblings Evangeline and Boy: <br> Jasmine Hipolito and Darryl San Pedro</strong>
+    </p>
+    </center>
+  </div>
+
+  <div id="tile-explanation-cast" class="tile-explanation-matiyagas">
+    <img class="pcn_image" src="img/matiyagas.jpg">
+    <center>
+    <p class="castinfo"><strong>Proud mother Elena Matiyaga and her children Petra, Pako, and Princess: <br> Jizel Emralino, Abigail Huliganga, Jon Ebueng, and Anna Katrina M. Apa</strong>
+    </p>
+    </center>
+  </div>
+
+  <div id="tile-explanation-cast" class="tile-explanation-bagaoisans">
+    <img class="pcn_image" src="img/bagaoisans.jpg">
+    <center>
+    <p class="castinfo"><strong>The Bagaoisans family. Father Miguel, mother Mariella, and their children Malaya, Matt, and Mercy: <br>Neiron Penalba, Jeannel Marinas, Rachel Yuen, Adrian Maqlaqui, and Sammy Dizon</strong>
+    </p>
+    </center>
+  </div>
+
+  <div id="tile-explanation-cast" class="tile-explanation-cheer">
+    <img class="pcn_image" src="img/cheer.jpg">
+    <center>
+    <p class="castinfo"><strong>The Acting Cast cheer!: <br> "1 - 2 - 3..ACT--TING!"</strong>
+    </p>
+    </center>
+  </div>
+
+  <div id="tile-explanation-cast" class="tile-explanation-actingcast">
+    <img class="pcn_image" src="img/actingcast.jpg">
+    <center>
+    <p class="castinfo"><strong>The Acting Directresses and the Acting Cast!</strong>
+    </p>
+    </center>
+  </div>
+
+  <div id="tile-explanation-cast" class="tile-explanation-allcast">
+    <img class="pcn_image" src="img/allcast.jpg">
+    <center>
+    <p class="castinfo"><strong>The entire cast of PCN 2014: Embark!</strong>
+    </p>
+    </center>
+  </div>
+
+
+  <div 
 
   <div class="container">
     <div class="heading">
@@ -170,7 +256,7 @@
       </tbody>
     </table>
     </div>
-  </center>
+</center>
 
   </div>
 
@@ -186,13 +272,76 @@
   <script src="js/application.js"></script>
 
   <script>
-    $( ".tile-2" ).hover(
-      function(){
-        alert("in!");
-      }, function() {
-        alert("out!");
-      }
-    );
+    //$(".tile-explanation-embarklogo").hide()
+    //$(".tile-explanation-directors").hide()
+    //$(".tile-explanation-rafael_juanita").hide()
+
+    $("body").on('mouseenter', '.tile-2', function () {
+      $(".tile-explanation-embarklogo").fadeIn(400)
+    }).on('mouseleave', '.tile-2', function () {
+      $(".tile-explanation-embarklogo").fadeOut("200")
+    });
+
+    $("body").on('mouseenter', '.tile-4', function () {
+      $(".tile-explanation-directors").fadeIn("400")
+    }).on('mouseleave', '.tile-4', function () {
+      $(".tile-explanation-directors").fadeOut("200")
+    });
+
+    $("body").on('mouseenter', '.tile-8', function () {
+      $(".tile-explanation-rafael_juanita").fadeIn("400")
+    }).on('mouseleave', '.tile-8', function () {
+      $(".tile-explanation-rafael_juanita").fadeOut("200")
+    });
+
+    $("body").on('mouseenter', '.tile-16', function () {
+      $(".tile-explanation-rivera_joe").fadeIn("400")
+    }).on('mouseleave', '.tile-16', function () {
+      $(".tile-explanation-rivera_joe").fadeOut("200")
+    });
+
+    $("body").on('mouseenter', '.tile-32', function () {
+      $(".tile-explanation-parkers").fadeIn("400")
+    }).on('mouseleave', '.tile-32', function () {
+      $(".tile-explanation-parkers").fadeOut("200")
+    });
+
+    $("body").on('mouseenter', '.tile-64', function () {
+      $(".tile-explanation-evangeline_boy").fadeIn("400")
+    }).on('mouseleave', '.tile-64', function () {
+      $(".tile-explanation-evangeline_boy").fadeOut("200")
+    });
+
+    $("body").on('mouseenter', '.tile-128', function () {
+      $(".tile-explanation-matiyagas").fadeIn("400")
+    }).on('mouseleave', '.tile-128', function () {
+      $(".tile-explanation-matiyagas").fadeOut("200")
+    });
+
+    $("body").on('mouseenter', '.tile-256', function () {
+      $(".tile-explanation-bagaoisans").fadeIn("400")
+    }).on('mouseleave', '.tile-256', function () {
+      $(".tile-explanation-bagaoisans").fadeOut("200")
+    });
+
+    $("body").on('mouseenter', '.tile-512', function () {
+      $(".tile-explanation-cheer").fadeIn("400")
+    }).on('mouseleave', '.tile-512', function () {
+      $(".tile-explanation-cheer").fadeOut("200")
+    });
+
+    $("body").on('mouseenter', '.tile-1024', function () {
+      $(".tile-explanation-actingcast").fadeIn("400")
+    }).on('mouseleave', '.tile-1024', function () {
+      $(".tile-explanation-actingcast").fadeOut("200")
+    });
+
+    $("body").on('mouseenter', '.tile-2048', function () {
+      $(".tile-explanation-allcast").fadeIn("400")
+    }).on('mouseleave', '.tile-2048', function () {
+      $(".tile-explanation-allcast").fadeOut("200")
+    });
+    
   </script>
 
 </body>
