@@ -100,6 +100,7 @@ GameManager.prototype.actuate = function () {
     terminated: this.isGameTerminated()
   });
 
+  $(".tile-explanation-general").fadeOut("200")
 };
 
 // Represent the current game as an object

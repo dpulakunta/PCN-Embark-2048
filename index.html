@@ -15,19 +15,19 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-<body>
+<body onload="startCycles()">
   <audio id="audiotagTEAM" src="audio/team.mp3" preload="auto"></audio>
   <audio id="audiotagMIA" src="audio/mia.mp3" preload="auto"></audio>
   <audio id="audiotagOLD" src="audio/old.mp3" preload="auto"></audio>
 
-  <div class="tile-explanation-embarklogo">
+  <div class="tile-explanation-embarklogo tile-explanation-general">
     <img class="pcn_image" src="img/embarklogo.png" height="315" style="border:5px solid black border-radius:25px">
     <center>
     <p class="embarkinfo"><strong>UC Berkeley's Pilipino American Alliance presents the 38th Annual Pilipino Cultural Night, PCN 2014: Embark.</strong></p>
     </center>
   </div>
 
-  <div id="tile-explanation-cast" class="tile-explanation-directors">
+  <div id="tile-explanation-cast" class="tile-explanation-directors tile-explanation-general">
     <img class="pcn_image" src="img/directors.jpg">
     <center>
     <p class="castinfo"><strong>Acting Directresses: Nicole Arca and Jasmine Hipolito</strong>
@@ -35,7 +35,7 @@
     </center>
   </div>
 
-  <div id="tile-explanation-cast" class="tile-explanation-rafael_juanita">
+  <div id="tile-explanation-cast" class="tile-explanation-rafael_juanita tile-explanation-general">
     <img class="pcn_image" src="img/rafael_juanita.jpg">
     <center>
     <p class="castinfo"><strong>Grandparents Raphael and Juanita: <br> Kevin Pamplona and Ranna Iglesias</strong>
@@ -43,7 +43,7 @@
     </center>
   </div>
 
-  <div id="tile-explanation-cast" class="tile-explanation-rivera_joe">
+  <div id="tile-explanation-cast" class="tile-explanation-rivera_joe tile-explanation-general">
     <img class="pcn_image" src="img/rivera_joe.jpg">
     <center>
     <p class="castinfo"><strong>Joe Rivera and his two children, Jennifer and Joe Jr.: <br> Nicholas Pitt, Sarah Macaraeg, JR Rempola</strong>
@@ -51,7 +51,7 @@
     </center>
   </div>
 
-  <div id="tile-explanation-cast" class="tile-explanation-parkers">
+  <div id="tile-explanation-cast" class="tile-explanation-parkers tile-explanation-general">
     <img class="pcn_image" src="img/parkers.jpg">
     <center>
     <p class="castinfo"><strong>Esperanza Parker and her child Matilda: <br> Pamela Lagera and Molly Krost</strong>
@@ -59,7 +59,7 @@
     </center>
   </div>
 
-  <div id="tile-explanation-cast" class="tile-explanation-evangeline_boy">
+  <div id="tile-explanation-cast" class="tile-explanation-evangeline_boy tile-explanation-general">
     <img class="pcn_image" src="img/evangeline_boy.jpg">
     <center>
     <p class="castinfo"><strong>Siblings Evangeline and Boy: <br> Jasmine Hipolito and Darryl San Pedro</strong>
@@ -67,7 +67,7 @@
     </center>
   </div>
 
-  <div id="tile-explanation-cast" class="tile-explanation-matiyagas">
+  <div id="tile-explanation-cast" class="tile-explanation-matiyagas tile-explanation-general">
     <img class="pcn_image" src="img/matiyagas.jpg">
     <center>
     <p class="castinfo"><strong>Proud mother Elena Matiyaga<br> and her children Petra, Pako, and Princess: <br>Jizel Emralino, Abigail Huliganga, <br>Jon Ebueng, and Anna Katrina M. Apa</strong>
@@ -75,7 +75,7 @@
     </center>
   </div>
 
-  <div id="tile-explanation-cast" class="tile-explanation-bagaoisans">
+  <div id="tile-explanation-cast" class="tile-explanation-bagaoisans tile-explanation-general">
     <img class="pcn_image" src="img/bagaoisans.jpg">
     <center>
     <p class="castinfo"><strong>The Bagaoisans family. <br> Father Miguel, mother Mariella, and their children Malaya, <br> Matt, and Mercy: <br>Neiron Penalba, Jeannel Marinas, <br> Rachel Yuen, Adrian Maqlaqui, <br> and Sammy Dizon</strong>
@@ -83,7 +83,7 @@
     </center>
   </div>
 
-  <div id="tile-explanation-cast" class="tile-explanation-cheer">
+  <div id="tile-explanation-cast" class="tile-explanation-cheer tile-explanation-general">
     <img class="pcn_image" src="img/cheer.jpg">
     <center>
     <p class="castinfo"><strong>The Acting Cast cheer!: <br> "1 - 2 - 3..ACT--TING!"</strong>
@@ -91,7 +91,7 @@
     </center>
   </div>
 
-  <div id="tile-explanation-cast" class="tile-explanation-actingcast">
+  <div id="tile-explanation-cast" class="tile-explanation-actingcast tile-explanation-general">
     <img class="pcn_image" src="img/actingcast.jpg">
     <center>
     <p class="castinfo"><strong>The Acting Directresses and the Acting Cast!</strong>
@@ -99,12 +99,24 @@
     </center>
   </div>
 
-  <div id="tile-explanation-cast" class="tile-explanation-allcast">
+  <div id="tile-explanation-cast" class="tile-explanation-allcast tile-explanation-general">
     <img class="pcn_image" src="img/allcast.jpg">
     <center>
     <p class="castinfo"><strong>The entire cast of PCN 2014: Embark!</strong>
     </p>
     </center>
+  </div>
+
+  <div class="slideshow_top">
+    <img class="slideshow_image" src="img/cycle/putritos.jpg">
+  </div>
+
+  <div class="slideshow_mid">
+    <img class="slideshow_image" src="img/cycle/stage.jpg">
+  </div>
+
+  <div class="slideshow_bot">
+    <img class="slideshow_image" src="img/cycle/marketing.jpg">
   </div>
 
 
@@ -121,7 +133,9 @@
 
     <div class="above-game">
       <p class="game-intro">Featuring the acting cast of <strong>UC Berkeley's PCN Embark!</strong></p>
+      <p><strong>Hover over the tiles for a peek into the cast!</strong></p>
       <a class="restart-button">New Game</a>
+      <a class="key-button" href="index.html#keytable">View Key</a>
     </div>
 
     <div class="game-container">
@@ -198,12 +212,15 @@
     Modified by <a href="http://github.com/kpscript" target="_blank">Kevin Pamplona</a>, forked directly from <a href="https://twitter.com/chrisasaur">Chris Sloey's</a> Leage of Legends themed <a href="http://chrissloey.github.io/LoL-2048/">version</a> of 2048. 2048 was created by <a href ='http://gabrielecirulli.com'>gabrielecirulli</a> which is inspired by<a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
     </p>
 <center>
-<div class='key game-explanation'>
+<div id="keytable" class='key game-explanation'>
     <table class="table">
       <thead>
         <td>
           Value
         </td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>
           Item
         </td>
@@ -211,47 +228,85 @@
       <tbody>
       <tr>
         <td>2</td>
-        <td><img width="64" height="64" src='img/embarklogo.png'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/embarklogo.png'></td>
       </tr>
       <tr>
         <td>4</td>
-        <td><img width="64" height="64" src='img/directors.jpg'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/directors.jpg'></td>
       </tr>
       <tr>
         <td>8</td>
-        <td><img width="64" height="64" src='img/rafael_juanita.jpg'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/rafael_juanita.jpg'></td>
       </tr>
       <tr>
         <td>16</td>
-        <td><img width="64" height="64" src='img/rivera_joe.jpg'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/rivera_joe.jpg'></td>
       </tr>
       <tr>
         <td>32</td>
-        <td><img width="64" height="64" src='img/parkers.jpg'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/parkers.jpg'></td>
       </tr>
       <tr>
         <td>64</td>
-        <td><img width="64" height="64" src='img/evangeline_boy.jpg'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/evangeline_boy.jpg'></td>
       </tr>
       <tr>
         <td>128</td>
-        <td><img width="64" height="64" src='img/matiyagas.jpg'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/matiyagas.jpg'></td>
       </tr>
       <tr>
         <td>256</td>
-        <td><img width="64" height="64" src='img/bagaoisans.jpg'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/bagaoisans.jpg'></td>
       </tr>
       <tr>
         <td>512</td>
-        <td><img width="64" height="64" src='img/cheer.jpg'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/cheer.jpg'></td>
       </tr>
       <tr>
         <td>1024</td>
-        <td><img width="64" height="64" src='img/actingcast.jpg'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/actingcast.jpg'></td>
       </tr>
       <tr>
         <td>2048</td>
-        <td><img width="64" height="64" src='img/allcast.jpg'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="table_img" width="120" src='img/allcast.jpg'></td>
+      </tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      <tr>
       </tr>
       </tbody>
     </table>
@@ -270,79 +325,8 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
-
-  <script>
-    //$(".tile-explanation-embarklogo").hide()
-    //$(".tile-explanation-directors").hide()
-    //$(".tile-explanation-rafael_juanita").hide()
-
-    $("body").on('mouseenter', '.tile-2', function () {
-      $(".tile-explanation-embarklogo").fadeIn(400)
-    }).on('mouseleave', '.tile-2', function () {
-      $(".tile-explanation-embarklogo").fadeOut("200")
-    });
-
-    $("body").on('mouseenter', '.tile-4', function () {
-      $(".tile-explanation-directors").fadeIn("400")
-    }).on('mouseleave', '.tile-4', function () {
-      $(".tile-explanation-directors").fadeOut("200")
-    });
-
-    $("body").on('mouseenter', '.tile-8', function () {
-      $(".tile-explanation-rafael_juanita").fadeIn("400")
-    }).on('mouseleave', '.tile-8', function () {
-      $(".tile-explanation-rafael_juanita").fadeOut("200")
-    });
-
-    $("body").on('mouseenter', '.tile-16', function () {
-      $(".tile-explanation-rivera_joe").fadeIn("400")
-    }).on('mouseleave', '.tile-16', function () {
-      $(".tile-explanation-rivera_joe").fadeOut("200")
-    });
-
-    $("body").on('mouseenter', '.tile-32', function () {
-      $(".tile-explanation-parkers").fadeIn("400")
-    }).on('mouseleave', '.tile-32', function () {
-      $(".tile-explanation-parkers").fadeOut("200")
-    });
-
-    $("body").on('mouseenter', '.tile-64', function () {
-      $(".tile-explanation-evangeline_boy").fadeIn("400")
-    }).on('mouseleave', '.tile-64', function () {
-      $(".tile-explanation-evangeline_boy").fadeOut("200")
-    });
-
-    $("body").on('mouseenter', '.tile-128', function () {
-      $(".tile-explanation-matiyagas").fadeIn("400")
-    }).on('mouseleave', '.tile-128', function () {
-      $(".tile-explanation-matiyagas").fadeOut("200")
-    });
-
-    $("body").on('mouseenter', '.tile-256', function () {
-      $(".tile-explanation-bagaoisans").fadeIn("400")
-    }).on('mouseleave', '.tile-256', function () {
-      $(".tile-explanation-bagaoisans").fadeOut("200")
-    });
-
-    $("body").on('mouseenter', '.tile-512', function () {
-      $(".tile-explanation-cheer").fadeIn("400")
-    }).on('mouseleave', '.tile-512', function () {
-      $(".tile-explanation-cheer").fadeOut("200")
-    });
-
-    $("body").on('mouseenter', '.tile-1024', function () {
-      $(".tile-explanation-actingcast").fadeIn("400")
-    }).on('mouseleave', '.tile-1024', function () {
-      $(".tile-explanation-actingcast").fadeOut("200")
-    });
-
-    $("body").on('mouseenter', '.tile-2048', function () {
-      $(".tile-explanation-allcast").fadeIn("400")
-    }).on('mouseleave', '.tile-2048', function () {
-      $(".tile-explanation-allcast").fadeOut("200")
-    });
-    
-  </script>
+  <script src="js/popup.js"></script>
+  <script src="js/cycle.js"></script>
 
 </body>
 </html>
