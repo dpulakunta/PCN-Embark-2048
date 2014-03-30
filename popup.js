@@ -1,4 +1,4 @@
-$("body").on('mouseenter', '.tile-2', function () {
+    $("body").on('mouseenter', '.tile-2', function () {
       $(".tile-explanation-embarklogo").fadeIn(400)
     }).on('mouseleave', '.tile-2', function () {
       $(".tile-explanation-embarklogo").fadeOut("200")

@@ -74,7 +74,6 @@ function startCycleThree() {
 	}, 5500);
 }
 
-
 function startCycles() {
 	startCycleOne();
 	startCycleTwo();
