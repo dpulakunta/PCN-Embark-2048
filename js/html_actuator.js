@@ -144,10 +144,7 @@ HTMLActuator.prototype.message = function (won) {
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
   var song = document.getElementById(audio_tag);
-  song.oncanplay = song.currentTime = 41;
   song.play()
-  //document.getElementById(audio_tag).addEventListener("canplay",function() { document.getElementById(audio_tag).currentTime = 41;});
-  //document.getElementById(audio_tag).play();
 };
 
 HTMLActuator.prototype.clearMessage = function () {
